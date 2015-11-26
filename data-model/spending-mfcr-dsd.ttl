@@ -35,7 +35,7 @@
 		qb:attribute mfcr-attribute:invoice-number
 	], [
 		rdfs:label "Transaction date"@en ;
-		qb:dimension obeu-dimension:date
+		qb:dimension mfcr-dimension:transaction-date
 	], [
 		rdfs:label "Currency"@en ;
 		qb:attribute obeu-attribute:currency ;
@@ -53,19 +53,25 @@
 # ----- Component properties -----
 
 mfcr-attribute:variable-symbol a rdf:Property, qb:AttributeProperty ;
-  rdfs:label "Variable symbol"@en ;
-  rdfs:comment "An identifier widely used for domestic payments in Czech republic."@en ; 
-  rdfs:range xsd:decimal ;
-  rdfs:isDefinedBy <http://data.janburianek.com/ontology/dsd/mfcr-paid-invoices-2014> .
+	rdfs:label "Variable symbol"@en ;
+	rdfs:comment "An identifier widely used for domestic payments in Czech republic."@en ; 
+	rdfs:range xsd:decimal ;
+	rdfs:isDefinedBy <http://data.janburianek.com/ontology/dsd/mfcr-paid-invoices-2014> .
 
 mfcr-attribute:payment-purpose a rdf:Property, qb:AttributeProperty ;
-  rdfs:label "Payment purpose"@en ;
-  rdfs:comment "For which purpose payment was made."@en ; 
-  rdfs:range xsd:string ;
-  rdfs:isDefinedBy <http://data.janburianek.com/ontology/dsd/mfcr-paid-invoices-2014> .
+	rdfs:label "Payment purpose"@en ;
+	rdfs:comment "For which purpose payment was made."@en ; 
+	rdfs:range xsd:string ;
+	rdfs:isDefinedBy <http://data.janburianek.com/ontology/dsd/mfcr-paid-invoices-2014> .
 
 mfcr-attribute:invoice-number a rdf:Property, qb:AttributeProperty ;
-  rdfs:label "Invoice number"@en ;
-  rdfs:comment "ID of partners' invoice."@en ; 
-  rdfs:range xsd:string ;
-  rdfs:isDefinedBy <http://data.janburianek.com/ontology/dsd/mfcr-paid-invoices-2014> .
+	rdfs:label "Invoice number"@en ;
+	rdfs:comment "ID of partners' invoice."@en ; 
+	rdfs:range xsd:string ;
+	rdfs:isDefinedBy <http://data.janburianek.com/ontology/dsd/mfcr-paid-invoices-2014> .
+
+mfcr-dimension:transaction-date a rdf:Property, qb:DimensionProperty ;
+	rdfs:label "Transaction date"@en ;
+	rdfs:comment "The day when transaction was made."@en ; 
+	rdfs:range xsd:date ;
+	rdfs:isDefinedBy <http://data.janburianek.com/ontology/dsd/mfcr-paid-invoices-2014> .
