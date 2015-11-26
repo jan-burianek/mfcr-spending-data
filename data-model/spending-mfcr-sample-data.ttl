@@ -1,0 +1,43 @@
+@prefix obeu-attribute:   <http://data.openbudgets.eu/ontology/dsd/attribute/> .
+@prefix obeu-currency:    <http://data.openbudgets.eu/resource/codelist/currency/> .
+@prefix obeu-dimension:   <http://data.openbudgets.eu/ontology/dsd/dimension/> .
+@prefix obeu-measure:     <http://data.openbudgets.eu/ontology/dsd/measure/> .
+@prefix obeu-operation:   <http://data.openbudgets.eu/resource/codelist/operation-character/> .
+@prefix qb:               <http://purl.org/linked-data/cube#> .
+@prefix schema:           <http://schema.org/> .
+@prefix xsd:              <http://www.w3.org/2001/XMLSchema#> .
+
+
+<http://data.janburianek.com/resource/dataset/mfcr-paid-invoices-2014> a qb:DataSet ;
+  qb:structure <http://data.janburianek.com/ontology/dsd/mfcr-paid-invoices-2014> ;
+  obeu-dimension:organization <http://dbpedia.org/resource/Ministry_of_Finance_(Czech_Republic)> ;
+  obeu-attribute:currency obeu-currency:CZK ;
+  dcterms:source <http://data.mfcr.cz/sites/default/files/Uhrazene-faktury_2014.xlsx> .
+
+<http://data.janburianek.com/resource/dataset/mfcr-paid-invoices-2014/observation/1> a qb:Observation ;
+  obeu-dimension:partner <http://data.janburianek.com/resource/organization/CZ25170538> ;
+  obeu-dimension:operation-character obeu-operation:expenditure ;
+  mfcr-attribute:payment-purpose "Právní služby 00822-212-S 13.6.2003"@cs ;
+  mfcr-attribute:invoice-number "130389" ;
+  mfcr-dimension:transaction-date "2014-01-13"^^xsd:date ;
+  obeu-measure:amount 11289.3 ;
+  mfcr-attribute:variable-symbol "980130012" ;
+  qb:dataSet <http://data.janburianek.com/resource/dataset/mfcr-paid-invoices-2014> . 
+
+<http://data.janburianek.com/resource/dataset/mfcr-paid-invoices-2014/observation/2> a qb:Observation ;
+  obeu-dimension:partner <http://data.janburianek.com/resource/organization/CZ25170539> ;
+  obeu-dimension:operation-character obeu-operation:revenue ;
+  mfcr-attribute:payment-purpose "popl. za vedení CP na účtu majitele"@cs ;
+  mfcr-attribute:invoice-number "200130588" ;
+  mfcr-dimension:transaction-date "2014-01-06"^^xsd:date ;
+  obeu-measure:amount 778288.0 ;
+  mfcr-attribute:variable-symbol "200130588" ;
+  qb:dataSet <http://data.janburianek.com/resource/dataset/mfcr-paid-invoices-2014> . 
+
+# ----- Linked entities -----
+
+<http://data.janburianek.com/resource/organization/CZ25170538> a rov:RegisteredOrganization ;
+  schema:legalName "Martin Korbař JUDr." .
+
+<http://data.janburianek.com/resource/organization/CZ25170539> a rov:RegisteredOrganization ;
+  schema:legalName "Centrální depozitář cenných papírů, a.s." .
