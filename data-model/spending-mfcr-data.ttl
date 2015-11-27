@@ -1,0 +1,1020 @@
+@prefix mfcr-organization:  <http://data.janburianek.com/resource/organization/> .
+@prefix schema:  <http://schema.org/> .
+@prefix mfcr-observation:  <http://data.janburianek.com/resource/dataset/mfcr-paid-invoices-2014/observation/> .
+@prefix obeu-attribute:  <http://data.openbudgets.eu/ontology/dsd/attribute/> .
+@prefix obeu-currency:  <http://data.openbudgets.eu/resource/codelist/currency/> .
+@prefix xsd:  <http://www.w3.org/2001/XMLSchema#> .
+@prefix obeu-dimension:  <http://data.openbudgets.eu/ontology/dsd/dimension/> .
+@prefix obeu-operation:  <http://data.openbudgets.eu/resource/codelist/operation-character/> .
+@prefix obeu-measure:  <http://data.openbudgets.eu/ontology/dsd/measure/> .
+@prefix qb:  <http://purl.org/linked-data/cube#> .
+@prefix mfcr-dimension:  <http://data.janburianek.com/ontology/dsd/mfcr-paid-invoices-2014/dimension/> .
+@prefix mfcr-attribute:  <http://data.janburianek.com/ontology/dsd/mfcr-paid-invoices-2014/attribute/> .
+@prefix dcterms:          <http://purl.org/dc/terms/> .
+@prefix rov:              <http://www.w3.org/ns/regorg#> .
+
+<http://data.janburianek.com/resource/dataset/mfcr-paid-invoices-2014> a qb:DataSet ;
+  qb:structure <http://data.janburianek.com/ontology/dsd/mfcr-paid-invoices-2014> ;
+  obeu-dimension:organization <http://dbpedia.org/resource/Ministry_of_Finance_(Czech_Republic)> ;
+  obeu-attribute:currency obeu-currency:CZK ;
+  dcterms:source <http://data.mfcr.cz/sites/default/files/Uhrazene-faktury_2014.xlsx> .
+
+mfcr-observation:13500004959801300121
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  qb:Observation ;
+        obeu-dimension:partner          mfcr-organization:04212-01 ;
+        obeu-dimension:operation-character  obeu-operation:expenditure ;
+        mfcr-attribute:payment-purpose  "Právní služby 00822-212-S 13.6.2003"@cs ;
+        mfcr-attribute:invoice-number   "130389"^^xsd:string ;
+        mfcr-attribute:variable-symbol  "980130012" ;
+        obeu-measure:amount             "11289,3" ;
+        qb:dataSet                      <http://data.janburianek.com/resource/dataset/mfcr-paid-invoices-2014> .
+
+mfcr-observation:13500004962001305881
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  qb:Observation ;
+        obeu-dimension:partner          mfcr-organization:00328-01 ;
+        obeu-dimension:operation-character  obeu-operation:expenditure ;
+        mfcr-attribute:payment-purpose  "popl. za vedení CP na účtu majitele "@cs ;
+        mfcr-attribute:invoice-number   "200130588"^^xsd:string ;
+        mfcr-attribute:variable-symbol  "200130588" ;
+        obeu-measure:amount             "778288" ;
+        qb:dataSet                      <http://data.janburianek.com/resource/dataset/mfcr-paid-invoices-2014> .
+
+mfcr-observation:13500004972001307721
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  qb:Observation ;
+        obeu-dimension:partner          mfcr-organization:04239-01 ;
+        obeu-dimension:operation-character  obeu-operation:expenditure ;
+        mfcr-attribute:payment-purpose  "správa objektu Chrastavská 231 Liberec"@cs ;
+        mfcr-attribute:invoice-number   "200130772"^^xsd:string ;
+        mfcr-attribute:variable-symbol  "200130772" ;
+        obeu-measure:amount             "2178" ;
+        qb:dataSet                      <http://data.janburianek.com/resource/dataset/mfcr-paid-invoices-2014> .
+
+mfcr-observation:1350000498121
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  qb:Observation ;
+        obeu-dimension:partner          mfcr-organization:04863-01 ;
+        obeu-dimension:operation-character  obeu-operation:expenditure ;
+        mfcr-attribute:payment-purpose  "právní služby"@cs ;
+        mfcr-attribute:invoice-number   "12"^^xsd:string ;
+        mfcr-attribute:variable-symbol  "12" ;
+        obeu-measure:amount             "30000" ;
+        qb:dataSet                      <http://data.janburianek.com/resource/dataset/mfcr-paid-invoices-2014> .
+
+mfcr-observation:1350000499130116081
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  qb:Observation ;
+        obeu-dimension:partner          mfcr-organization:16679-01 ;
+        obeu-dimension:operation-character  obeu-operation:expenditure ;
+        mfcr-attribute:payment-purpose  "právní služby 05947-2012-453 6.12.2012"@cs ;
+        mfcr-attribute:invoice-number   "13011608"^^xsd:string ;
+        mfcr-attribute:variable-symbol  "13011608" ;
+        obeu-measure:amount             "6909" ;
+        qb:dataSet                      <http://data.janburianek.com/resource/dataset/mfcr-paid-invoices-2014> .
+
+mfcr-observation:135000050020130121
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  qb:Observation ;
+        obeu-dimension:partner          mfcr-organization:07054-01 ;
+        obeu-dimension:operation-character  obeu-operation:expenditure ;
+        mfcr-attribute:payment-purpose  "správa objektu Sedlice u Želivy"@cs ;
+        mfcr-attribute:invoice-number   "2013012"^^xsd:string ;
+        mfcr-attribute:variable-symbol  "2013012" ;
+        obeu-measure:amount             "2500" ;
+        qb:dataSet                      <http://data.janburianek.com/resource/dataset/mfcr-paid-invoices-2014> .
+
+mfcr-observation:1350000501413004901
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  qb:Observation ;
+        obeu-dimension:partner          mfcr-organization:04205-01 ;
+        obeu-dimension:operation-character  obeu-operation:expenditure ;
+        mfcr-attribute:payment-purpose  "Pražská 67 Nehvizdy výměna okapového svodu na objektu"@cs ;
+        mfcr-attribute:invoice-number   "41300490"^^xsd:string ;
+        mfcr-attribute:variable-symbol  "41300490" ;
+        obeu-measure:amount             "3128" ;
+        qb:dataSet                      <http://data.janburianek.com/resource/dataset/mfcr-paid-invoices-2014> .
+
+mfcr-observation:1350000502413005071
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  qb:Observation ;
+        obeu-dimension:partner          mfcr-organization:04205-01 ;
+        obeu-dimension:operation-character  obeu-operation:expenditure ;
+        mfcr-attribute:payment-purpose  "kontrola spalinových cest v objektu Pražská 67 Nehvizdy"@cs ;
+        mfcr-attribute:invoice-number   "41300507"^^xsd:string ;
+        mfcr-attribute:variable-symbol  "41300507" ;
+        obeu-measure:amount             "1162" ;
+        qb:dataSet                      <http://data.janburianek.com/resource/dataset/mfcr-paid-invoices-2014> .
+
+mfcr-observation:1350000503131261111
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  qb:Observation ;
+        obeu-dimension:partner          mfcr-organization:07147-01 ;
+        obeu-dimension:operation-character  obeu-operation:expenditure ;
+        mfcr-attribute:payment-purpose  "formulář v elektronické podobě na VZ"@cs ;
+        mfcr-attribute:invoice-number   "13126111"^^xsd:string ;
+        mfcr-attribute:variable-symbol  "13126111" ;
+        obeu-measure:amount             "254,1" ;
+        qb:dataSet                      <http://data.janburianek.com/resource/dataset/mfcr-paid-invoices-2014> .
+
+mfcr-observation:1350000504131261101
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  qb:Observation ;
+        obeu-dimension:partner          mfcr-organization:07147-01 ;
+        obeu-dimension:operation-character  obeu-operation:expenditure ;
+        mfcr-attribute:payment-purpose  "formulář v elektronické podobě na VZ"@cs ;
+        mfcr-attribute:invoice-number   "13126110"^^xsd:string ;
+        mfcr-attribute:variable-symbol  "13126110" ;
+        obeu-measure:amount             "254,1" ;
+        qb:dataSet                      <http://data.janburianek.com/resource/dataset/mfcr-paid-invoices-2014> .
+
+mfcr-observation:1350000505131261091
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  qb:Observation ;
+        obeu-dimension:partner          mfcr-organization:07147-01 ;
+        obeu-dimension:operation-character  obeu-operation:expenditure ;
+        mfcr-attribute:payment-purpose  "formulář v elektronické podobě na VZ"@cs ;
+        mfcr-attribute:invoice-number   "13126109"^^xsd:string ;
+        mfcr-attribute:variable-symbol  "13126109" ;
+        obeu-measure:amount             "254,1" ;
+        qb:dataSet                      <http://data.janburianek.com/resource/dataset/mfcr-paid-invoices-2014> .
+
+mfcr-observation:1350000506131253411
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  qb:Observation ;
+        obeu-dimension:partner          mfcr-organization:07147-01 ;
+        obeu-dimension:operation-character  obeu-operation:expenditure ;
+        mfcr-attribute:payment-purpose  "formulář v elektronické podobě na VZ"@cs ;
+        mfcr-attribute:invoice-number   "13125341"^^xsd:string ;
+        mfcr-attribute:variable-symbol  "13125341" ;
+        obeu-measure:amount             "254,1" ;
+        qb:dataSet                      <http://data.janburianek.com/resource/dataset/mfcr-paid-invoices-2014> .
+
+mfcr-observation:1350000507131254051
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  qb:Observation ;
+        obeu-dimension:partner          mfcr-organization:07147-01 ;
+        obeu-dimension:operation-character  obeu-operation:expenditure ;
+        mfcr-attribute:payment-purpose  "formulář v elektronické podobě na VZ"@cs ;
+        mfcr-attribute:invoice-number   "13125405"^^xsd:string ;
+        mfcr-attribute:variable-symbol  "13125405" ;
+        obeu-measure:amount             "254,1" ;
+        qb:dataSet                      <http://data.janburianek.com/resource/dataset/mfcr-paid-invoices-2014> .
+
+mfcr-observation:1350000508131250261
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  qb:Observation ;
+        obeu-dimension:partner          mfcr-organization:07147-01 ;
+        obeu-dimension:operation-character  obeu-operation:expenditure ;
+        mfcr-attribute:payment-purpose  "formulář v elektronické podobě na VZ"@cs ;
+        mfcr-attribute:invoice-number   "13125026"^^xsd:string ;
+        mfcr-attribute:variable-symbol  "13125026" ;
+        obeu-measure:amount             "254,1" ;
+        qb:dataSet                      <http://data.janburianek.com/resource/dataset/mfcr-paid-invoices-2014> .
+
+mfcr-observation:1350000509131261081
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  qb:Observation ;
+        obeu-dimension:partner          mfcr-organization:07147-01 ;
+        obeu-dimension:operation-character  obeu-operation:expenditure ;
+        mfcr-attribute:payment-purpose  "formulář v elektronické podobě na VZ"@cs ;
+        mfcr-attribute:invoice-number   "13126108"^^xsd:string ;
+        mfcr-attribute:variable-symbol  "13126108" ;
+        obeu-measure:amount             "254,1" ;
+        qb:dataSet                      <http://data.janburianek.com/resource/dataset/mfcr-paid-invoices-2014> .
+
+mfcr-observation:135000051090571
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  qb:Observation ;
+        obeu-dimension:partner          mfcr-organization:04154-01 ;
+        obeu-dimension:operation-character  obeu-operation:expenditure ;
+        mfcr-attribute:payment-purpose  "kontrola areálu Nová Ves u Chrastavy"@cs ;
+        mfcr-attribute:invoice-number   "9057"^^xsd:string ;
+        mfcr-attribute:variable-symbol  "9057" ;
+        obeu-measure:amount             "18150" ;
+        qb:dataSet                      <http://data.janburianek.com/resource/dataset/mfcr-paid-invoices-2014> .
+
+mfcr-observation:1350000511511
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  qb:Observation ;
+        obeu-dimension:partner          mfcr-organization:04154-01 ;
+        obeu-dimension:operation-character  obeu-operation:expenditure ;
+        mfcr-attribute:payment-purpose  "kontrola lokality Keteřinky u LB"@cs ;
+        mfcr-attribute:invoice-number   "51"^^xsd:string ;
+        mfcr-attribute:variable-symbol  "51" ;
+        obeu-measure:amount             "4235" ;
+        qb:dataSet                      <http://data.janburianek.com/resource/dataset/mfcr-paid-invoices-2014> .
+
+mfcr-observation:1350000512431
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  qb:Observation ;
+        obeu-dimension:partner          mfcr-organization:04154-01 ;
+        obeu-dimension:operation-character  obeu-operation:expenditure ;
+        mfcr-attribute:payment-purpose  "kontrola objektu Nové Pavlovice"@cs ;
+        mfcr-attribute:invoice-number   "43"^^xsd:string ;
+        mfcr-attribute:variable-symbol  "43" ;
+        obeu-measure:amount             "4235" ;
+        qb:dataSet                      <http://data.janburianek.com/resource/dataset/mfcr-paid-invoices-2014> .
+
+mfcr-observation:13500005132013000931
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  qb:Observation ;
+        obeu-dimension:partner          mfcr-organization:07741-01 ;
+        obeu-dimension:operation-character  obeu-operation:expenditure ;
+        mfcr-attribute:payment-purpose  "KOH-I-NOOR HARDTMUTH Kardašova Řečice"@cs ;
+        mfcr-attribute:invoice-number   "201300093"^^xsd:string ;
+        mfcr-attribute:variable-symbol  "201300093" ;
+        obeu-measure:amount             "13915" ;
+        qb:dataSet                      <http://data.janburianek.com/resource/dataset/mfcr-paid-invoices-2014> .
+
+mfcr-observation:13500005142013000921
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  qb:Observation ;
+        obeu-dimension:partner          mfcr-organization:07741-01 ;
+        obeu-dimension:operation-character  obeu-operation:expenditure ;
+        mfcr-attribute:payment-purpose  "správa majetku KŘ vně areálu býv. KOH-I-NOOR"@cs ;
+        mfcr-attribute:invoice-number   "201300092"^^xsd:string ;
+        mfcr-attribute:variable-symbol  "201300092" ;
+        obeu-measure:amount             "4961" ;
+        qb:dataSet                      <http://data.janburianek.com/resource/dataset/mfcr-paid-invoices-2014> .
+
+mfcr-observation:13500005151301048381
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  qb:Observation ;
+        obeu-dimension:partner          mfcr-organization:08646-01 ;
+        obeu-dimension:operation-character  obeu-operation:expenditure ;
+        mfcr-attribute:payment-purpose  "Palackého ul. ostraha  objektu KŘ"@cs ;
+        mfcr-attribute:invoice-number   "130104838"^^xsd:string ;
+        mfcr-attribute:variable-symbol  "130104838" ;
+        obeu-measure:amount             "49513" ;
+        qb:dataSet                      <http://data.janburianek.com/resource/dataset/mfcr-paid-invoices-2014> .
+
+mfcr-observation:135000051620132791
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  qb:Observation ;
+        obeu-dimension:partner          mfcr-organization:07457-01 ;
+        obeu-dimension:operation-character  obeu-operation:expenditure ;
+        mfcr-attribute:payment-purpose  "právní služby"@cs ;
+        mfcr-attribute:invoice-number   "2013279"^^xsd:string ;
+        mfcr-attribute:variable-symbol  "2013279" ;
+        obeu-measure:amount             "39204" ;
+        qb:dataSet                      <http://data.janburianek.com/resource/dataset/mfcr-paid-invoices-2014> .
+
+mfcr-observation:135000051720132801
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  qb:Observation ;
+        obeu-dimension:partner          mfcr-organization:07457-01 ;
+        obeu-dimension:operation-character  obeu-operation:expenditure ;
+        mfcr-attribute:payment-purpose  "právní služby"@cs ;
+        mfcr-attribute:invoice-number   "2013280"^^xsd:string ;
+        mfcr-attribute:variable-symbol  "2013280" ;
+        obeu-measure:amount             "69696" ;
+        qb:dataSet                      <http://data.janburianek.com/resource/dataset/mfcr-paid-invoices-2014> .
+
+mfcr-observation:135000051920132821
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  qb:Observation ;
+        obeu-dimension:partner          mfcr-organization:07457-01 ;
+        obeu-dimension:operation-character  obeu-operation:expenditure ;
+        mfcr-attribute:payment-purpose  "právní služby 04150-2008-454 19.11.2008"@cs ;
+        mfcr-attribute:invoice-number   "2013282"^^xsd:string ;
+        mfcr-attribute:variable-symbol  "2013282" ;
+        obeu-measure:amount             "12100" ;
+        qb:dataSet                      <http://data.janburianek.com/resource/dataset/mfcr-paid-invoices-2014> .
+
+mfcr-observation:135000052020132891
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  qb:Observation ;
+        obeu-dimension:partner          mfcr-organization:07457-01 ;
+        obeu-dimension:operation-character  obeu-operation:expenditure ;
+        mfcr-attribute:payment-purpose  "právní služby 04755-2010-453 8.2.2010"@cs ;
+        mfcr-attribute:invoice-number   "2013289"^^xsd:string ;
+        mfcr-attribute:variable-symbol  "2013289" ;
+        obeu-measure:amount             "15155,25" ;
+        qb:dataSet                      <http://data.janburianek.com/resource/dataset/mfcr-paid-invoices-2014> .
+
+mfcr-observation:13500005211413000011
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  qb:Observation ;
+        obeu-dimension:partner          mfcr-organization:07741-01 ;
+        obeu-dimension:operation-character  obeu-operation:expenditure ;
+        mfcr-attribute:payment-purpose  "správa majetku KOH-I-NOOR "@cs ;
+        mfcr-attribute:invoice-number   "141300001"^^xsd:string ;
+        mfcr-attribute:variable-symbol  "141300001" ;
+        obeu-measure:amount             "5808" ;
+        qb:dataSet                      <http://data.janburianek.com/resource/dataset/mfcr-paid-invoices-2014> .
+
+mfcr-observation:13500005221621303501
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  qb:Observation ;
+        obeu-dimension:partner          mfcr-organization:07340-01 ;
+        obeu-dimension:operation-character  obeu-operation:expenditure ;
+        mfcr-attribute:payment-purpose  "Poliklinika Kostelec n. Orlicí - opravy"@cs ;
+        mfcr-attribute:invoice-number   "162130350"^^xsd:string ;
+        mfcr-attribute:variable-symbol  "162130350" ;
+        obeu-measure:amount             "1500" ;
+        qb:dataSet                      <http://data.janburianek.com/resource/dataset/mfcr-paid-invoices-2014> .
+
+mfcr-observation:135000052313121
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  qb:Observation ;
+        obeu-dimension:partner          mfcr-organization:04203-01 ;
+        obeu-dimension:operation-character  obeu-operation:expenditure ;
+        mfcr-attribute:payment-purpose  "právní služby 00812-2003-212 11.6.2003"@cs ;
+        mfcr-attribute:invoice-number   "1312"^^xsd:string ;
+        mfcr-attribute:variable-symbol  "1312" ;
+        obeu-measure:amount             "56664,3" ;
+        qb:dataSet                      <http://data.janburianek.com/resource/dataset/mfcr-paid-invoices-2014> .
+
+mfcr-observation:135000052491400000191
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  qb:Observation ;
+        obeu-dimension:partner          mfcr-organization:00785-01 ;
+        obeu-dimension:operation-character  obeu-operation:expenditure ;
+        mfcr-attribute:payment-purpose  "odměna KB za poskytované služby - směnky"@cs ;
+        mfcr-attribute:invoice-number   "9140000019"^^xsd:string ;
+        mfcr-attribute:variable-symbol  "9140000019" ;
+        obeu-measure:amount             "3000" ;
+        qb:dataSet                      <http://data.janburianek.com/resource/dataset/mfcr-paid-invoices-2014> .
+
+mfcr-observation:135000052520132811
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  qb:Observation ;
+        obeu-dimension:partner          mfcr-organization:07457-01 ;
+        obeu-dimension:operation-character  obeu-operation:expenditure ;
+        mfcr-attribute:payment-purpose  "právní služby"@cs ;
+        mfcr-attribute:invoice-number   "2013281"^^xsd:string ;
+        mfcr-attribute:variable-symbol  "2013281" ;
+        obeu-measure:amount             "24819,52" ;
+        qb:dataSet                      <http://data.janburianek.com/resource/dataset/mfcr-paid-invoices-2014> .
+
+mfcr-observation:13500005262554220141
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  qb:Observation ;
+        obeu-dimension:partner          mfcr-organization:08663-01 ;
+        obeu-dimension:operation-character  obeu-operation:expenditure ;
+        mfcr-attribute:payment-purpose  "ČKA   poplatky za obhospodařování cenných papírů VIPAP VIDEM Krško spol. ALTA Invest, období IV. Q. 2013  v částce 3 948,63 EUR "@cs ;
+        mfcr-attribute:invoice-number   "255422014"^^xsd:string ;
+        mfcr-attribute:variable-symbol  "255422014" ;
+        obeu-measure:amount             "108508,35" ;
+        qb:dataSet                      <http://data.janburianek.com/resource/dataset/mfcr-paid-invoices-2014> .
+
+mfcr-observation:14000000018258041
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  qb:Observation ;
+        obeu-dimension:partner          mfcr-organization:04221-01 ;
+        obeu-dimension:operation-character  obeu-operation:expenditure ;
+        mfcr-attribute:payment-purpose  "Právní poradenství"@cs ;
+        mfcr-attribute:invoice-number   "825804"^^xsd:string ;
+        mfcr-attribute:variable-symbol  "825804" ;
+        obeu-measure:amount             "214079,25" ;
+        qb:dataSet                      <http://data.janburianek.com/resource/dataset/mfcr-paid-invoices-2014> .
+
+mfcr-observation:140000000223131
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  qb:Observation ;
+        obeu-dimension:partner          mfcr-organization:17431-01 ;
+        obeu-dimension:operation-character  obeu-operation:expenditure ;
+        mfcr-attribute:payment-purpose  "Administrativní činnost"@cs ;
+        mfcr-attribute:invoice-number   "23/13"^^xsd:string ;
+        mfcr-attribute:variable-symbol  "2313" ;
+        obeu-measure:amount             "2000" ;
+        qb:dataSet                      <http://data.janburianek.com/resource/dataset/mfcr-paid-invoices-2014> .
+
+mfcr-observation:1400000003192393011
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  qb:Observation ;
+        obeu-dimension:partner          mfcr-organization:02026-01 ;
+        obeu-dimension:operation-character  obeu-operation:expenditure ;
+        mfcr-attribute:payment-purpose  "Nákup odborné publikace"@cs ;
+        mfcr-attribute:invoice-number   "19239301"^^xsd:string ;
+        mfcr-attribute:variable-symbol  "19239301" ;
+        obeu-measure:amount             "2472" ;
+        qb:dataSet                      <http://data.janburianek.com/resource/dataset/mfcr-paid-invoices-2014> .
+
+mfcr-observation:140000000420134451
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  qb:Observation ;
+        obeu-dimension:partner          mfcr-organization:01409-01 ;
+        obeu-dimension:operation-character  obeu-operation:expenditure ;
+        mfcr-attribute:payment-purpose  "Občerstvení"@cs ;
+        mfcr-attribute:invoice-number   "2013445"^^xsd:string ;
+        mfcr-attribute:variable-symbol  "2013445" ;
+        obeu-measure:amount             "11708" ;
+        qb:dataSet                      <http://data.janburianek.com/resource/dataset/mfcr-paid-invoices-2014> .
+
+mfcr-observation:140000000513331
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  qb:Observation ;
+        obeu-dimension:partner          mfcr-organization:01912-01 ;
+        obeu-dimension:operation-character  obeu-operation:expenditure ;
+        mfcr-attribute:payment-purpose  "FM2 - výroba PF 2014 - napříč programy"@cs ;
+        mfcr-attribute:invoice-number   "1333"^^xsd:string ;
+        mfcr-attribute:variable-symbol  "1333" ;
+        obeu-measure:amount             "3636" ;
+        qb:dataSet                      <http://data.janburianek.com/resource/dataset/mfcr-paid-invoices-2014> .
+
+mfcr-observation:140000000613120360331
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  qb:Observation ;
+        obeu-dimension:partner          mfcr-organization:07133-01 ;
+        obeu-dimension:operation-character  obeu-operation:revenue ;
+        mfcr-attribute:payment-purpose  "Deník \"\"MF Dnes\"\" (každé vydání 9 ks)"@cs ;
+        mfcr-attribute:invoice-number   "1312036033"^^xsd:string ;
+        mfcr-attribute:variable-symbol  "1312036033" ;
+        obeu-measure:amount             "35892" ;
+        qb:dataSet                      <http://data.janburianek.com/resource/dataset/mfcr-paid-invoices-2014> .
+
+mfcr-observation:140000000713120341791
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  qb:Observation ;
+        obeu-dimension:partner          mfcr-organization:07133-01 ;
+        obeu-dimension:operation-character  obeu-operation:revenue ;
+        mfcr-attribute:payment-purpose  "Deník \"\"Lidové noviny\"\" (každé vydání 7 ks)"@cs ;
+        mfcr-attribute:invoice-number   "1312034179"^^xsd:string ;
+        mfcr-attribute:variable-symbol  "1312034179" ;
+        obeu-measure:amount             "28472" ;
+        qb:dataSet                      <http://data.janburianek.com/resource/dataset/mfcr-paid-invoices-2014> .
+
+mfcr-observation:14000000081310006821
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  qb:Observation ;
+        obeu-dimension:partner          mfcr-organization:00812-01 ;
+        obeu-dimension:operation-character  obeu-operation:expenditure ;
+        mfcr-attribute:payment-purpose  "Dálkový dohled elektrokotelny a havarijní pohotovost za 12/2013 - Letenská "@cs ;
+        mfcr-attribute:invoice-number   "131000682"^^xsd:string ;
+        mfcr-attribute:variable-symbol  "131000682" ;
+        obeu-measure:amount             "17545" ;
+        qb:dataSet                      <http://data.janburianek.com/resource/dataset/mfcr-paid-invoices-2014> .
+
+mfcr-observation:14000000091310006801
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  qb:Observation ;
+        obeu-dimension:partner          mfcr-organization:00812-01 ;
+        obeu-dimension:operation-character  obeu-operation:expenditure ;
+        mfcr-attribute:payment-purpose  "Pravidelná revize el. zařízení - Hybernská"@cs ;
+        mfcr-attribute:invoice-number   "131000680"^^xsd:string ;
+        mfcr-attribute:variable-symbol  "131000680" ;
+        obeu-measure:amount             "34920,6" ;
+        qb:dataSet                      <http://data.janburianek.com/resource/dataset/mfcr-paid-invoices-2014> .
+
+mfcr-observation:140000001062913021
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  qb:Observation ;
+        obeu-dimension:partner          mfcr-organization:02318-01 ;
+        obeu-dimension:operation-character  obeu-operation:revenue ;
+        mfcr-attribute:payment-purpose  "Záloha na odběr tepla na rok 2014 - Janovského"@cs ;
+        mfcr-attribute:invoice-number   "6291302"^^xsd:string ;
+        mfcr-attribute:variable-symbol  "6291302" ;
+        obeu-measure:amount             "383900" ;
+        qb:dataSet                      <http://data.janburianek.com/resource/dataset/mfcr-paid-invoices-2014> .
+
+mfcr-observation:14000000114808131
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  qb:Observation ;
+        obeu-dimension:partner          mfcr-organization:17433-01 ;
+        obeu-dimension:operation-character  obeu-operation:expenditure ;
+        mfcr-attribute:payment-purpose  "Nákup nafty do dieselagregátu v budově Ministerstva financí Janovského 2 Praha 7 dle obj.č.417/55/2013"@cs ;
+        mfcr-attribute:invoice-number   "480813"^^xsd:string ;
+        mfcr-attribute:variable-symbol  "480813" ;
+        obeu-measure:amount             "8557,2" ;
+        qb:dataSet                      <http://data.janburianek.com/resource/dataset/mfcr-paid-invoices-2014> .
+
+mfcr-observation:140000001210936103011
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  qb:Observation ;
+        obeu-dimension:partner          mfcr-organization:00079-01 ;
+        obeu-dimension:operation-character  obeu-operation:expenditure ;
+        mfcr-attribute:payment-purpose  "Pronájem komunikace - Parkovné - Legerova"@cs ;
+        mfcr-attribute:invoice-number   "1093610301"^^xsd:string ;
+        mfcr-attribute:variable-symbol  "1093610301" ;
+        obeu-measure:amount             "7893" ;
+        qb:dataSet                      <http://data.janburianek.com/resource/dataset/mfcr-paid-invoices-2014> .
+
+mfcr-observation:140000001310936103001
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  qb:Observation ;
+        obeu-dimension:partner          mfcr-organization:00079-01 ;
+        obeu-dimension:operation-character  obeu-operation:expenditure ;
+        mfcr-attribute:payment-purpose  "Pronájem komunikace -  Parkovné - Letenská"@cs ;
+        mfcr-attribute:invoice-number   "1093610300"^^xsd:string ;
+        mfcr-attribute:variable-symbol  "1093610300" ;
+        obeu-measure:amount             "15788" ;
+        qb:dataSet                      <http://data.janburianek.com/resource/dataset/mfcr-paid-invoices-2014> .
+
+mfcr-observation:14000000184213014451
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  qb:Observation ;
+        obeu-dimension:partner          mfcr-organization:00776-01 ;
+        obeu-dimension:operation-character  obeu-operation:expenditure ;
+        mfcr-attribute:payment-purpose  "Servis  multifunkčního kopírovacího stroje SHARP, MF Legerova, dle sml. 3302/135/2013"@cs ;
+        mfcr-attribute:invoice-number   "421301445"^^xsd:string ;
+        mfcr-attribute:variable-symbol  "421301445" ;
+        obeu-measure:amount             "3519" ;
+        qb:dataSet                      <http://data.janburianek.com/resource/dataset/mfcr-paid-invoices-2014> .
+
+mfcr-observation:14000000194213014441
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  qb:Observation ;
+        obeu-dimension:partner          mfcr-organization:00776-01 ;
+        obeu-dimension:operation-character  obeu-operation:expenditure ;
+        mfcr-attribute:payment-purpose  "Servis  multifunkčního kopírovacího stroje SHARP, MF Legerova, dle sml. 3302/135/2013"@cs ;
+        mfcr-attribute:invoice-number   "421301444"^^xsd:string ;
+        mfcr-attribute:variable-symbol  "421301444" ;
+        obeu-measure:amount             "1876" ;
+        qb:dataSet                      <http://data.janburianek.com/resource/dataset/mfcr-paid-invoices-2014> .
+
+mfcr-observation:14000000204213014431
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  qb:Observation ;
+        obeu-dimension:partner          mfcr-organization:00776-01 ;
+        obeu-dimension:operation-character  obeu-operation:expenditure ;
+        mfcr-attribute:payment-purpose  "Servis  multifunkčního kopírovacího stroje SHARP, MF Legerova,dle sml. 3302/135/2013"@cs ;
+        mfcr-attribute:invoice-number   "421301443"^^xsd:string ;
+        mfcr-attribute:variable-symbol  "421301443" ;
+        obeu-measure:amount             "9403" ;
+        qb:dataSet                      <http://data.janburianek.com/resource/dataset/mfcr-paid-invoices-2014> .
+
+mfcr-observation:14000000214213014461
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  qb:Observation ;
+        obeu-dimension:partner          mfcr-organization:00776-01 ;
+        obeu-dimension:operation-character  obeu-operation:expenditure ;
+        mfcr-attribute:payment-purpose  "Servis  multifunkčního kopírovacího stroje SHARP, MF Legerova, dle sml. 3302/135/2013"@cs ;
+        mfcr-attribute:invoice-number   "421301446"^^xsd:string ;
+        mfcr-attribute:variable-symbol  "421301446" ;
+        obeu-measure:amount             "6068" ;
+        qb:dataSet                      <http://data.janburianek.com/resource/dataset/mfcr-paid-invoices-2014> .
+
+mfcr-observation:14000000224213014421
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  qb:Observation ;
+        obeu-dimension:partner          mfcr-organization:00776-01 ;
+        obeu-dimension:operation-character  obeu-operation:expenditure ;
+        mfcr-attribute:payment-purpose  "Servis  multifunkčního kopírovacího stroje SHARP, MF Janovského,  dle sml. 3302/135/2013"@cs ;
+        mfcr-attribute:invoice-number   "421301442"^^xsd:string ;
+        mfcr-attribute:variable-symbol  "421301442" ;
+        obeu-measure:amount             "9707" ;
+        qb:dataSet                      <http://data.janburianek.com/resource/dataset/mfcr-paid-invoices-2014> .
+
+mfcr-observation:140000002420131057181
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  qb:Observation ;
+        obeu-dimension:partner          mfcr-organization:00005-01 ;
+        obeu-dimension:operation-character  obeu-operation:expenditure ;
+        mfcr-attribute:payment-purpose  "Zajištění servisní a technické podpory systému PKI resortu MF dle sml. 3302/027/2013"@cs ;
+        mfcr-attribute:invoice-number   "2013105718"^^xsd:string ;
+        mfcr-attribute:variable-symbol  "2013105718" ;
+        obeu-measure:amount             "407951,5" ;
+        qb:dataSet                      <http://data.janburianek.com/resource/dataset/mfcr-paid-invoices-2014> .
+
+mfcr-observation:14000000252013321
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  qb:Observation ;
+        obeu-dimension:partner          mfcr-organization:06662-01 ;
+        obeu-dimension:operation-character  obeu-operation:expenditure ;
+        mfcr-attribute:payment-purpose  "Konzultační služby dle sml. 332/018/2012"@cs ;
+        mfcr-attribute:invoice-number   "201332"^^xsd:string ;
+        mfcr-attribute:variable-symbol  "201332" ;
+        obeu-measure:amount             "58080" ;
+        qb:dataSet                      <http://data.janburianek.com/resource/dataset/mfcr-paid-invoices-2014> .
+
+mfcr-observation:14000000262013301
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  qb:Observation ;
+        obeu-dimension:partner          mfcr-organization:06662-01 ;
+        obeu-dimension:operation-character  obeu-operation:expenditure ;
+        mfcr-attribute:payment-purpose  "Konzultační služby dle sml. 332/018/2012"@cs ;
+        mfcr-attribute:invoice-number   "201330"^^xsd:string ;
+        mfcr-attribute:variable-symbol  "201330" ;
+        obeu-measure:amount             "58080" ;
+        qb:dataSet                      <http://data.janburianek.com/resource/dataset/mfcr-paid-invoices-2014> .
+
+mfcr-observation:140000002791470940531
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  qb:Observation ;
+        obeu-dimension:partner          mfcr-organization:01031-01 ;
+        obeu-dimension:operation-character  obeu-operation:expenditure ;
+        mfcr-attribute:payment-purpose  "Vyúčtování telekomunikačních služeb 12/2013 dle prov.sml. 332/009-2/2012"@cs ;
+        mfcr-attribute:invoice-number   "9147094053"^^xsd:string ;
+        mfcr-attribute:variable-symbol  "9147094053" ;
+        obeu-measure:amount             "707003" ;
+        qb:dataSet                      <http://data.janburianek.com/resource/dataset/mfcr-paid-invoices-2014> .
+
+mfcr-observation:140000002891470937281
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  qb:Observation ;
+        obeu-dimension:partner          mfcr-organization:01031-01 ;
+        obeu-dimension:operation-character  obeu-operation:expenditure ;
+        mfcr-attribute:payment-purpose  "IP VPN 12/2013 komunikační linka STC - ČNB   dle sml. 332/173/2011"@cs ;
+        mfcr-attribute:invoice-number   "9147093728"^^xsd:string ;
+        mfcr-attribute:variable-symbol  "9147093728" ;
+        obeu-measure:amount             "17545" ;
+        qb:dataSet                      <http://data.janburianek.com/resource/dataset/mfcr-paid-invoices-2014> .
+
+mfcr-observation:140000002920132171
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  qb:Observation ;
+        obeu-dimension:partner          mfcr-organization:06285-01 ;
+        obeu-dimension:operation-character  obeu-operation:expenditure ;
+        mfcr-attribute:payment-purpose  "Práce dle akceptačního protokolu za 12/2013 - údržba IS ZFDZ - dle sml. 332/001/2011"@cs ;
+        mfcr-attribute:invoice-number   "2013217"^^xsd:string ;
+        mfcr-attribute:variable-symbol  "2013217" ;
+        obeu-measure:amount             "24200" ;
+        qb:dataSet                      <http://data.janburianek.com/resource/dataset/mfcr-paid-invoices-2014> .
+
+mfcr-observation:140000003071305105491
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  qb:Observation ;
+        obeu-dimension:partner          mfcr-organization:01626-01 ;
+        obeu-dimension:operation-character  obeu-operation:expenditure ;
+        mfcr-attribute:payment-purpose  "Servisní služby na mikrovlnných spojích dle sml. 403/055/2004 - měsíční platba "@cs ;
+        mfcr-attribute:invoice-number   "7130510549"^^xsd:string ;
+        mfcr-attribute:variable-symbol  "7130510549" ;
+        obeu-measure:amount             "3013" ;
+        qb:dataSet                      <http://data.janburianek.com/resource/dataset/mfcr-paid-invoices-2014> .
+
+mfcr-observation:140000003111414588811
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  qb:Observation ;
+        obeu-dimension:partner          mfcr-organization:00006-01 ;
+        obeu-dimension:operation-character  obeu-operation:expenditure ;
+        mfcr-attribute:payment-purpose  "Údržba hlasového systému 10-12/2013(komunikačních systémů Hicom a HiPath) dle smlouvy 332/007/2007"@cs ;
+        mfcr-attribute:invoice-number   "1141458881"^^xsd:string ;
+        mfcr-attribute:variable-symbol  "1141458881" ;
+        obeu-measure:amount             "151247,58" ;
+        qb:dataSet                      <http://data.janburianek.com/resource/dataset/mfcr-paid-invoices-2014> .
+
+mfcr-observation:1400000032201430041
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  qb:Observation ;
+        obeu-dimension:partner          mfcr-organization:00259-01 ;
+        obeu-dimension:operation-character  obeu-operation:expenditure ;
+        mfcr-attribute:payment-purpose  "Letenky"@cs ;
+        mfcr-attribute:invoice-number   "20143004"^^xsd:string ;
+        mfcr-attribute:variable-symbol  "20143004" ;
+        obeu-measure:amount             "93800" ;
+        qb:dataSet                      <http://data.janburianek.com/resource/dataset/mfcr-paid-invoices-2014> .
+
+mfcr-observation:140000003364900801
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  qb:Observation ;
+        obeu-dimension:partner          mfcr-organization:16723-01 ;
+        obeu-dimension:operation-character  obeu-operation:expenditure ;
+        mfcr-attribute:payment-purpose  "Splátka leasingu za 1/2014 - pronájem vozidel pro CAO."@cs ;
+        mfcr-attribute:invoice-number   "6490080"^^xsd:string ;
+        mfcr-attribute:variable-symbol  "6490080" ;
+        obeu-measure:amount             "135740,91" ;
+        qb:dataSet                      <http://data.janburianek.com/resource/dataset/mfcr-paid-invoices-2014> .
+
+mfcr-observation:1400000034301557031
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  qb:Observation ;
+        obeu-dimension:partner          mfcr-organization:00021-01 ;
+        obeu-dimension:operation-character  obeu-operation:revenue ;
+        mfcr-attribute:payment-purpose  "Záloha PRE_byt Na Maninách_ZÚ 3015 5703_od 6.1. do 6.4.2014"@cs ;
+        mfcr-attribute:invoice-number   "30155703"^^xsd:string ;
+        mfcr-attribute:variable-symbol  "30155703" ;
+        obeu-measure:amount             "3950" ;
+        qb:dataSet                      <http://data.janburianek.com/resource/dataset/mfcr-paid-invoices-2014> .
+
+mfcr-observation:140000003569220131
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  qb:Observation ;
+        obeu-dimension:partner          mfcr-organization:00872-01 ;
+        obeu-dimension:operation-character  obeu-operation:expenditure ;
+        mfcr-attribute:payment-purpose  "Úklid v Kabinetu ministra - Letenská 15 v období 2.12.-31.12.2013"@cs ;
+        mfcr-attribute:invoice-number   "692/2013"^^xsd:string ;
+        mfcr-attribute:variable-symbol  "6922013" ;
+        obeu-measure:amount             "15129,03" ;
+        qb:dataSet                      <http://data.janburianek.com/resource/dataset/mfcr-paid-invoices-2014> .
+
+mfcr-observation:140000003667120131
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  qb:Observation ;
+        obeu-dimension:partner          mfcr-organization:00872-01 ;
+        obeu-dimension:operation-character  obeu-operation:expenditure ;
+        mfcr-attribute:payment-purpose  "Pravidelný úklid v budově MF Janovského 438/2 za 12/2013"@cs ;
+        mfcr-attribute:invoice-number   "671/2013"^^xsd:string ;
+        mfcr-attribute:variable-symbol  "6712013" ;
+        obeu-measure:amount             "43269,07" ;
+        qb:dataSet                      <http://data.janburianek.com/resource/dataset/mfcr-paid-invoices-2014> .
+
+mfcr-observation:140000003667120132
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  qb:Observation ;
+        obeu-dimension:partner          mfcr-organization:00872-01 ;
+        obeu-dimension:operation-character  obeu-operation:expenditure ;
+        mfcr-attribute:payment-purpose  "Pravidelný úklid v budově MF Janovského 438/2 za 12/2013"@cs ;
+        mfcr-attribute:invoice-number   "671/2013"^^xsd:string ;
+        mfcr-attribute:variable-symbol  "6712013" ;
+        obeu-measure:amount             "128552,84" ;
+        qb:dataSet                      <http://data.janburianek.com/resource/dataset/mfcr-paid-invoices-2014> .
+
+mfcr-observation:140000003767020131
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  qb:Observation ;
+        obeu-dimension:partner          mfcr-organization:00872-01 ;
+        obeu-dimension:operation-character  obeu-operation:expenditure ;
+        mfcr-attribute:payment-purpose  "Úklid budovy MF Letenská za 12/2013"@cs ;
+        mfcr-attribute:invoice-number   "670/2013"^^xsd:string ;
+        mfcr-attribute:variable-symbol  "6702013" ;
+        obeu-measure:amount             "378959" ;
+        qb:dataSet                      <http://data.janburianek.com/resource/dataset/mfcr-paid-invoices-2014> .
+
+mfcr-observation:140000003866920131
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  qb:Observation ;
+        obeu-dimension:partner          mfcr-organization:00872-01 ;
+        obeu-dimension:operation-character  obeu-operation:expenditure ;
+        mfcr-attribute:payment-purpose  "Úklid budovy MF Legerova za 12/2013"@cs ;
+        mfcr-attribute:invoice-number   "669/2013"^^xsd:string ;
+        mfcr-attribute:variable-symbol  "6692013" ;
+        obeu-measure:amount             "72260,53" ;
+        qb:dataSet                      <http://data.janburianek.com/resource/dataset/mfcr-paid-invoices-2014> .
+
+mfcr-observation:140000003971220131
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  qb:Observation ;
+        obeu-dimension:partner          mfcr-organization:00872-01 ;
+        obeu-dimension:operation-character  obeu-operation:expenditure ;
+        mfcr-attribute:payment-purpose  "Nákup hygienického materiálu za 12/2013"@cs ;
+        mfcr-attribute:invoice-number   "712/2013"^^xsd:string ;
+        mfcr-attribute:variable-symbol  "7122013" ;
+        obeu-measure:amount             "12156,87" ;
+        qb:dataSet                      <http://data.janburianek.com/resource/dataset/mfcr-paid-invoices-2014> .
+
+mfcr-observation:140000004020131221851
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  qb:Observation ;
+        obeu-dimension:partner          mfcr-organization:17436-01 ;
+        obeu-dimension:operation-character  obeu-operation:expenditure ;
+        mfcr-attribute:payment-purpose  "Chemické vyčištění křišťálových lustrů (odbor 10 - Kabinet ministra)"@cs ;
+        mfcr-attribute:invoice-number   "2013122185"^^xsd:string ;
+        mfcr-attribute:variable-symbol  "2013122185" ;
+        obeu-measure:amount             "4114" ;
+        qb:dataSet                      <http://data.janburianek.com/resource/dataset/mfcr-paid-invoices-2014> .
+
+mfcr-observation:1400000041201300161
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  qb:Observation ;
+        obeu-dimension:partner          mfcr-organization:17437-01 ;
+        obeu-dimension:operation-character  obeu-operation:expenditure ;
+        mfcr-attribute:payment-purpose  "Oprava technologie chladících jednotek klimatizace - Legerova"@cs ;
+        mfcr-attribute:invoice-number   "20130016"^^xsd:string ;
+        mfcr-attribute:variable-symbol  "20130016" ;
+        obeu-measure:amount             "16214" ;
+        qb:dataSet                      <http://data.janburianek.com/resource/dataset/mfcr-paid-invoices-2014> .
+
+mfcr-observation:1400000042120141
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  qb:Observation ;
+        obeu-dimension:partner          mfcr-organization:00210-01 ;
+        obeu-dimension:operation-character  obeu-operation:expenditure ;
+        mfcr-attribute:payment-purpose  "Úklid budovy MF Letenská 15 za 17.-31.12/2013"@cs ;
+        mfcr-attribute:invoice-number   "1/2014"^^xsd:string ;
+        mfcr-attribute:variable-symbol  "12014" ;
+        obeu-measure:amount             "13224" ;
+        qb:dataSet                      <http://data.janburianek.com/resource/dataset/mfcr-paid-invoices-2014> .
+
+mfcr-observation:1400000043120141
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  qb:Observation ;
+        obeu-dimension:partner          mfcr-organization:07349-01 ;
+        obeu-dimension:operation-character  obeu-operation:expenditure ;
+        mfcr-attribute:payment-purpose  "Úklid budovy MF Letenská 15 za 17.-31.12/2013"@cs ;
+        mfcr-attribute:invoice-number   "1/2014"^^xsd:string ;
+        mfcr-attribute:variable-symbol  "12014" ;
+        obeu-measure:amount             "13224" ;
+        qb:dataSet                      <http://data.janburianek.com/resource/dataset/mfcr-paid-invoices-2014> .
+
+mfcr-observation:1400000044120141
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  qb:Observation ;
+        obeu-dimension:partner          mfcr-organization:01209-01 ;
+        obeu-dimension:operation-character  obeu-operation:expenditure ;
+        mfcr-attribute:payment-purpose  "Úklid budovy MF Letenská 15 za 17.-31.12/2013"@cs ;
+        mfcr-attribute:invoice-number   "1/2014"^^xsd:string ;
+        mfcr-attribute:variable-symbol  "12014" ;
+        obeu-measure:amount             "13224" ;
+        qb:dataSet                      <http://data.janburianek.com/resource/dataset/mfcr-paid-invoices-2014> .
+
+mfcr-observation:1400000045120141
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  qb:Observation ;
+        obeu-dimension:partner          mfcr-organization:03689-01 ;
+        obeu-dimension:operation-character  obeu-operation:expenditure ;
+        mfcr-attribute:payment-purpose  "Úklid budovy MF Letenská 15 za 17.-31.12/2013"@cs ;
+        mfcr-attribute:invoice-number   "1/2014"^^xsd:string ;
+        mfcr-attribute:variable-symbol  "12014" ;
+        obeu-measure:amount             "13224" ;
+        qb:dataSet                      <http://data.janburianek.com/resource/dataset/mfcr-paid-invoices-2014> .
+
+mfcr-observation:1400000047955991
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  qb:Observation ;
+        obeu-dimension:partner          mfcr-organization:00873-01 ;
+        obeu-dimension:operation-character  obeu-operation:expenditure ;
+        mfcr-attribute:payment-purpose  "Pravidelné profylaktické prohlídky rozvodny VN/NN za 4. Q/2013 - Voctářova"@cs ;
+        mfcr-attribute:invoice-number   "FO95599"^^xsd:string ;
+        mfcr-attribute:variable-symbol  "95599" ;
+        obeu-measure:amount             "69270" ;
+        qb:dataSet                      <http://data.janburianek.com/resource/dataset/mfcr-paid-invoices-2014> .
+
+mfcr-observation:1400000049103302951
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  qb:Observation ;
+        obeu-dimension:partner          mfcr-organization:00903-01 ;
+        obeu-dimension:operation-character  obeu-operation:expenditure ;
+        mfcr-attribute:payment-purpose  "Revize požárních klapek - Janovského"@cs ;
+        mfcr-attribute:invoice-number   "10330295"^^xsd:string ;
+        mfcr-attribute:variable-symbol  "10330295" ;
+        obeu-measure:amount             "88391" ;
+        qb:dataSet                      <http://data.janburianek.com/resource/dataset/mfcr-paid-invoices-2014> .
+
+mfcr-observation:1400000050103302941
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  qb:Observation ;
+        obeu-dimension:partner          mfcr-organization:00903-01 ;
+        obeu-dimension:operation-character  obeu-operation:expenditure ;
+        mfcr-attribute:payment-purpose  "Servis VZT zařízení - Janovského"@cs ;
+        mfcr-attribute:invoice-number   "10330294"^^xsd:string ;
+        mfcr-attribute:variable-symbol  "10330294" ;
+        obeu-measure:amount             "82592" ;
+        qb:dataSet                      <http://data.janburianek.com/resource/dataset/mfcr-paid-invoices-2014> .
+
+mfcr-observation:1400000051601800871
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  qb:Observation ;
+        obeu-dimension:partner          mfcr-organization:00114-01 ;
+        obeu-dimension:operation-character  obeu-operation:expenditure ;
+        mfcr-attribute:payment-purpose  "Sbírka Mezinárodních smluv - dobropis"@cs ;
+        mfcr-attribute:invoice-number   "60180087"^^xsd:string ;
+        mfcr-attribute:variable-symbol  "60180087" ;
+        obeu-measure:amount             "-477" ;
+        qb:dataSet                      <http://data.janburianek.com/resource/dataset/mfcr-paid-invoices-2014> .
+
+mfcr-observation:1400000052141000221
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  qb:Observation ;
+        obeu-dimension:partner          mfcr-organization:06460-01 ;
+        obeu-dimension:operation-character  obeu-operation:expenditure ;
+        mfcr-attribute:payment-purpose  "Uložení archivačních písemností ACKL a ZFDZ na 1. čtvrtlení 2014"@cs ;
+        mfcr-attribute:invoice-number   "14100022"^^xsd:string ;
+        mfcr-attribute:variable-symbol  "14100022" ;
+        obeu-measure:amount             "32496" ;
+        qb:dataSet                      <http://data.janburianek.com/resource/dataset/mfcr-paid-invoices-2014> .
+
+mfcr-observation:1400000053119101
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  qb:Observation ;
+        obeu-dimension:partner          mfcr-organization:00427-01 ;
+        obeu-dimension:operation-character  obeu-operation:revenue ;
+        mfcr-attribute:payment-purpose  "Záloha vodné a stočné Hybernská za období 1/2014"@cs ;
+        mfcr-attribute:invoice-number   "613423071"^^xsd:string ;
+        mfcr-attribute:variable-symbol  "11910" ;
+        obeu-measure:amount             "2200" ;
+        qb:dataSet                      <http://data.janburianek.com/resource/dataset/mfcr-paid-invoices-2014> .
+
+mfcr-observation:1400000054505771
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  qb:Observation ;
+        obeu-dimension:partner          mfcr-organization:00427-01 ;
+        obeu-dimension:operation-character  obeu-operation:revenue ;
+        mfcr-attribute:payment-purpose  "Záloha vodné stočné Letenská 15 za období 1/2013"@cs ;
+        mfcr-attribute:invoice-number   "613414851"^^xsd:string ;
+        mfcr-attribute:variable-symbol  "50577" ;
+        obeu-measure:amount             "8690" ;
+        qb:dataSet                      <http://data.janburianek.com/resource/dataset/mfcr-paid-invoices-2014> .
+
+mfcr-observation:140000005588801153401
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  qb:Observation ;
+        obeu-dimension:partner          mfcr-organization:00064-01 ;
+        obeu-dimension:operation-character  obeu-operation:expenditure ;
+        mfcr-attribute:payment-purpose  "Televizní poplatek na 1. Q/2014 - ubytovna Voctářova"@cs ;
+        mfcr-attribute:invoice-number   "8880115340"^^xsd:string ;
+        mfcr-attribute:variable-symbol  "8880115340" ;
+        obeu-measure:amount             "405" ;
+        qb:dataSet                      <http://data.janburianek.com/resource/dataset/mfcr-paid-invoices-2014> .
+
+mfcr-observation:140000005611313338611
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  qb:Observation ;
+        obeu-dimension:partner          mfcr-organization:00852-01 ;
+        obeu-dimension:operation-character  obeu-operation:expenditure ;
+        mfcr-attribute:payment-purpose  "Nákup ostatního materiálu (lžičky, talíř desertní) - Letenská"@cs ;
+        mfcr-attribute:invoice-number   "1131333861"^^xsd:string ;
+        mfcr-attribute:variable-symbol  "1131333861" ;
+        obeu-measure:amount             "729" ;
+        qb:dataSet                      <http://data.janburianek.com/resource/dataset/mfcr-paid-invoices-2014> .
+
+mfcr-observation:14000000571220131
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  qb:Observation ;
+        obeu-dimension:partner          mfcr-organization:02955-01 ;
+        obeu-dimension:operation-character  obeu-operation:expenditure ;
+        mfcr-attribute:payment-purpose  "Poradenství 12/2013"@cs ;
+        mfcr-attribute:invoice-number   "12/2013"^^xsd:string ;
+        mfcr-attribute:variable-symbol  "122013" ;
+        obeu-measure:amount             "61710" ;
+        qb:dataSet                      <http://data.janburianek.com/resource/dataset/mfcr-paid-invoices-2014> .
+
+mfcr-observation:140000005832603145281
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  qb:Observation ;
+        obeu-dimension:partner          mfcr-organization:00005-01 ;
+        obeu-dimension:operation-character  obeu-operation:expenditure ;
+        mfcr-attribute:payment-purpose  "Dobropis - opravný daňový doklad k faktuře č. 13/000/04956"@cs ;
+        mfcr-attribute:invoice-number   "3260314528"^^xsd:string ;
+        mfcr-attribute:variable-symbol  "3260314528" ;
+        obeu-measure:amount             "-23488,99" ;
+        qb:dataSet                      <http://data.janburianek.com/resource/dataset/mfcr-paid-invoices-2014> .
+
+mfcr-observation:1400000059201400041
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  qb:Observation ;
+        obeu-dimension:partner          mfcr-organization:02267-01 ;
+        obeu-dimension:operation-character  obeu-operation:expenditure ;
+        mfcr-attribute:payment-purpose  "Zajištění IISSP dle sml. 332/086/2009 Přípravná etapa"@cs ;
+        mfcr-attribute:invoice-number   "20140004"^^xsd:string ;
+        mfcr-attribute:variable-symbol  "20140004" ;
+        obeu-measure:amount             "121000" ;
+        qb:dataSet                      <http://data.janburianek.com/resource/dataset/mfcr-paid-invoices-2014> .
+
+mfcr-observation:1400000060201400051
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  qb:Observation ;
+        obeu-dimension:partner          mfcr-organization:02267-01 ;
+        obeu-dimension:operation-character  obeu-operation:expenditure ;
+        mfcr-attribute:payment-purpose  "Zajištění aplikace Exekutor dle sml. 332/133/2010"@cs ;
+        mfcr-attribute:invoice-number   "20140005"^^xsd:string ;
+        mfcr-attribute:variable-symbol  "20140005" ;
+        obeu-measure:amount             "60500" ;
+        qb:dataSet                      <http://data.janburianek.com/resource/dataset/mfcr-paid-invoices-2014> .
+
+mfcr-observation:140000006121311206751
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  qb:Observation ;
+        obeu-dimension:partner          mfcr-organization:01167-01 ;
+        obeu-dimension:operation-character  obeu-operation:expenditure ;
+        mfcr-attribute:payment-purpose  "Servis záložních zdrojů UPS v rozsahu programu Pgm ALTRON BRONZE+ dle smlouvy 332/056/2006 - 4. čtvrtletí r. 2013"@cs ;
+        mfcr-attribute:invoice-number   "2131120675"^^xsd:string ;
+        mfcr-attribute:variable-symbol  "2131120675" ;
+        obeu-measure:amount             "15125" ;
+        qb:dataSet                      <http://data.janburianek.com/resource/dataset/mfcr-paid-invoices-2014> .
+
+mfcr-observation:1400000062142400101
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  qb:Observation ;
+        obeu-dimension:partner          mfcr-organization:17399-01 ;
+        obeu-dimension:operation-character  obeu-operation:expenditure ;
+        mfcr-attribute:payment-purpose  "Podpora provozu abcSuite - DMS dle sml. 332/012/2011"@cs ;
+        mfcr-attribute:invoice-number   "14240010"^^xsd:string ;
+        mfcr-attribute:variable-symbol  "14240010" ;
+        obeu-measure:amount             "156816" ;
+        qb:dataSet                      <http://data.janburianek.com/resource/dataset/mfcr-paid-invoices-2014> .
+
+mfcr-observation:1400000063142400091
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  qb:Observation ;
+        obeu-dimension:partner          mfcr-organization:17399-01 ;
+        obeu-dimension:operation-character  obeu-operation:expenditure ;
+        mfcr-attribute:payment-purpose  "Technická podpora dle sml. 332/052/2009"@cs ;
+        mfcr-attribute:invoice-number   "14240009"^^xsd:string ;
+        mfcr-attribute:variable-symbol  "14240009" ;
+        obeu-measure:amount             "72600" ;
+        qb:dataSet                      <http://data.janburianek.com/resource/dataset/mfcr-paid-invoices-2014> .
+
+mfcr-observation:1400000064142400121
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  qb:Observation ;
+        obeu-dimension:partner          mfcr-organization:17399-01 ;
+        obeu-dimension:operation-character  obeu-operation:expenditure ;
+        mfcr-attribute:payment-purpose  "Poskytování maintenace dle sml. 332/002/2011"@cs ;
+        mfcr-attribute:invoice-number   "14240012"^^xsd:string ;
+        mfcr-attribute:variable-symbol  "14240012" ;
+        obeu-measure:amount             "338606,4" ;
+        qb:dataSet                      <http://data.janburianek.com/resource/dataset/mfcr-paid-invoices-2014> .
+
+mfcr-observation:14000000651401000021
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  qb:Observation ;
+        obeu-dimension:partner          mfcr-organization:16601-01 ;
+        obeu-dimension:operation-character  obeu-operation:expenditure ;
+        mfcr-attribute:payment-purpose  "Právní pomoc - 1/2014"@cs ;
+        mfcr-attribute:invoice-number   "140100002"^^xsd:string ;
+        mfcr-attribute:variable-symbol  "140100002" ;
+        obeu-measure:amount             "605000" ;
+        qb:dataSet                      <http://data.janburianek.com/resource/dataset/mfcr-paid-invoices-2014> .
+
+mfcr-observation:1400000066241234291
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  qb:Observation ;
+        obeu-dimension:partner          mfcr-organization:07358-01 ;
+        obeu-dimension:operation-character  obeu-operation:revenue ;
+        mfcr-attribute:payment-purpose  "Prodloužení domény \"\"spořícídluhopisycr.eu do 2.3.2015"@cs ;
+        mfcr-attribute:invoice-number   "24123429"^^xsd:string ;
+        mfcr-attribute:variable-symbol  "24123429" ;
+        obeu-measure:amount             "180" ;
+        qb:dataSet                      <http://data.janburianek.com/resource/dataset/mfcr-paid-invoices-2014> .
+
+mfcr-observation:1400000067241236271
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  qb:Observation ;
+        obeu-dimension:partner          mfcr-organization:07358-01 ;
+        obeu-dimension:operation-character  obeu-operation:revenue ;
+        mfcr-attribute:payment-purpose  "Prodloužení domény \"\"státnídluhopisy.eu\"\" do 2.3.2015"@cs ;
+        mfcr-attribute:invoice-number   "24123627"^^xsd:string ;
+        mfcr-attribute:variable-symbol  "24123627" ;
+        obeu-measure:amount             "180" ;
+        qb:dataSet                      <http://data.janburianek.com/resource/dataset/mfcr-paid-invoices-2014> .
+
+mfcr-observation:140000006872014000061
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  qb:Observation ;
+        obeu-dimension:partner          mfcr-organization:08078-01 ;
+        obeu-dimension:operation-character  obeu-operation:expenditure ;
+        mfcr-attribute:payment-purpose  "Obsazené místo na profilu zadavatele ( 3548 Mb ke dni 1.1.2014) dle objednávky 10/024/00151 Zveřejňování výzev k podání nabídky na profilu zadavatele MF  ve zjednoduš.podlimit.říz"@cs ;
+        mfcr-attribute:invoice-number   "7201400006"^^xsd:string ;
+        mfcr-attribute:variable-symbol  "7201400006" ;
+        obeu-measure:amount             "2844" ;
+        qb:dataSet                      <http://data.janburianek.com/resource/dataset/mfcr-paid-invoices-2014> .
+
+mfcr-observation:140000006912328480141
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  qb:Observation ;
+        obeu-dimension:partner          mfcr-organization:00005-01 ;
+        obeu-dimension:operation-character  obeu-operation:expenditure ;
+        mfcr-attribute:payment-purpose  "Mobilní hlasové a datové telekomunikační služby - Hovorné 12/2013 (e.č. MF: 3302/102/2013)"@cs ;
+        mfcr-attribute:invoice-number   "1232848014"^^xsd:string ;
+        mfcr-attribute:variable-symbol  "1232848014" ;
+        obeu-measure:amount             "115702,34" ;
+        qb:dataSet                      <http://data.janburianek.com/resource/dataset/mfcr-paid-invoices-2014> .
+
+mfcr-observation:140000007012328482031
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  qb:Observation ;
+        obeu-dimension:partner          mfcr-organization:00005-01 ;
+        obeu-dimension:operation-character  obeu-operation:expenditure ;
+        mfcr-attribute:payment-purpose  "Mobilní hlasové a datové telekomunikační služby pro Auditní Orgán - Odbor 52 - Hovorné 12/2013 (e.č. MF: 332/102/2013)"@cs ;
+        mfcr-attribute:invoice-number   "1232848203"^^xsd:string ;
+        mfcr-attribute:variable-symbol  "1232848203" ;
+        obeu-measure:amount             "108150,25" ;
+        qb:dataSet                      <http://data.janburianek.com/resource/dataset/mfcr-paid-invoices-2014> .
+
+mfcr-observation:140000007199502995391
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  qb:Observation ;
+        obeu-dimension:partner          mfcr-organization:01169-01 ;
+        obeu-dimension:operation-character  obeu-operation:expenditure ;
+        mfcr-attribute:payment-purpose  "Mobilní hlasové a datové telekomunikační služby - Hovorné 12/2013 (e.č. MF: 332/052/2013)"@cs ;
+        mfcr-attribute:invoice-number   "55580114"^^xsd:string ;
+        mfcr-attribute:variable-symbol  "9950299539" ;
+        obeu-measure:amount             "87956" ;
+        qb:dataSet                      <http://data.janburianek.com/resource/dataset/mfcr-paid-invoices-2014> .
+
+mfcr-observation:140000007272013014081
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  qb:Observation ;
+        obeu-dimension:partner          mfcr-organization:08078-01 ;
+        obeu-dimension:operation-character  obeu-operation:expenditure ;
+        mfcr-attribute:payment-purpose  "Obsazené místo na profilu zadavatele ( 3129 Mb ke dni 1.1.2013) dle objednávky 10/024/00151 Zveřejňování výzev k podání nabídky na profilu zadavatele MF  ve zjednoduš.podl říz"@cs ;
+        mfcr-attribute:invoice-number   "7201301408"^^xsd:string ;
+        mfcr-attribute:variable-symbol  "7201301408" ;
+        obeu-measure:amount             "2844" ;
+        qb:dataSet                      <http://data.janburianek.com/resource/dataset/mfcr-paid-invoices-2014> .
+
+mfcr-observation:140000007324000141
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  qb:Observation ;
+        obeu-dimension:partner          mfcr-organization:00040-01 ;
+        obeu-dimension:operation-character  obeu-operation:expenditure ;
+        mfcr-attribute:payment-purpose  "Mandátní smlouva - zprostředkovatelská činnost v oblasti informačních a komunikačních technologií  za prosinec 2013 dle smlouvy 403/181/2003 v souladu s dodatkem 24"@cs ;
+        mfcr-attribute:invoice-number   "2400014"^^xsd:string ;
+        mfcr-attribute:variable-symbol  "2400014" ;
+        obeu-measure:amount             "2141926,27" ;
+        qb:dataSet                      <http://data.janburianek.com/resource/dataset/mfcr-paid-invoices-2014> .
+
+mfcr-observation:14000000741101323701
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  qb:Observation ;
+        obeu-dimension:partner          mfcr-organization:17216-01 ;
+        obeu-dimension:operation-character  obeu-operation:expenditure ;
+        mfcr-attribute:payment-purpose  "Ostraha 12/2013 - objekt Hybernská"@cs ;
+        mfcr-attribute:invoice-number   "110132370"^^xsd:string ;
+        mfcr-attribute:variable-symbol  "110132370" ;
+        obeu-measure:amount             "11072" ;
+        qb:dataSet                      <http://data.janburianek.com/resource/dataset/mfcr-paid-invoices-2014> .
+
+mfcr-observation:14000000751101323691
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  qb:Observation ;
+        obeu-dimension:partner          mfcr-organization:17216-01 ;
+        obeu-dimension:operation-character  obeu-operation:expenditure ;
+        mfcr-attribute:payment-purpose  "Ostraha 12/2013 - objekt Voctářova"@cs ;
+        mfcr-attribute:invoice-number   "110132369"^^xsd:string ;
+        mfcr-attribute:variable-symbol  "110132369" ;
+        obeu-measure:amount             "206111" ;
+        qb:dataSet                      <http://data.janburianek.com/resource/dataset/mfcr-paid-invoices-2014> .
