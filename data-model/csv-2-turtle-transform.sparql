@@ -14,6 +14,14 @@ prefix dcterms:          <http://purl.org/dc/terms/>
 prefix rov:              <http://www.w3.org/ns/regorg#>
 
 CONSTRUCT {
+    <http://data.janburianek.com/resource/dataset/mfcr-paid-invoices-2014> a qb:DataSet ;
+        qb:structure <http://data.janburianek.com/ontology/dsd/mfcr-paid-invoices-2014> ;
+        obeu-dimension:organization <http://dbpedia.org/resource/Ministry_of_Finance_(Czech_Republic)> ;
+        obeu-attribute:currency obeu-currency:CZK ;
+        dcterms:source <http://data.mfcr.cz/sites/default/files/Uhrazene-faktury_2014.xlsx> .
+} FROM <file:spending-mfcr-data.csv> WHERE {} LIMIT 1
+
+CONSTRUCT {
     ?obs a qb:Observation ;
         obeu-dimension:partner ?partner ;
         obeu-dimension:operation-character ?op_char ;
@@ -21,7 +29,7 @@ CONSTRUCT {
         mfcr-attribute:invoice-number ?invoice_number ;
         mfcr-dimension:transaction-date ?transaction_date ;
         mfcr-attribute:variable-symbol ?Variabilni_symbol ;
-        obeu-measure:amount ?Castka___radek;
+        obeu-measure:amount ?amount;
         qb:dataSet <http://data.janburianek.com/resource/dataset/mfcr-paid-invoices-2014> . 
 }
 
@@ -30,12 +38,23 @@ WHERE {
     BIND(URI(CONCAT('http://data.janburianek.com/resource/dataset/mfcr-paid-invoices-2014/observation/', ?Cislo_faktury, ?Variabilni_symbol, ?Cislo_radku)) AS ?obs)
     BIND(URI(CONCAT('http://data.janburianek.com/resource/organization/', ?Kod_partnera)) AS ?partner)
     BIND(
-    	IF( ?Typ_dokladu = "Z",
+    	IF( ?Typ_dokladu = "D",
     		URI(CONCAT("http://data.openbudgets.eu/resource/codelist/operation-character/", "revenue")),	# else
     		URI(CONCAT("http://data.openbudgets.eu/resource/codelist/operation-character/", "expenditure")))
     	AS ?op_char)
     BIND(STRLANG(?Ucel_platby, "cs") AS ?purpose)
     BIND(xsd:string(?Cislo_faktury_dodavatele) AS ?invoice_number)
     BIND(xsd:date(?Datum_uhrady) AS ?transaction_date)
+    BIND(ABS(xsd:decimal(?Castka___radek)) AS ?amount)
 }
-LIMIT 100
+
+CONSTRUCT {
+    ?partner a rov:RegisteredOrganization ;
+        schema:legalName ?partner_legal_name .
+}
+
+FROM <file:spending-mfcr-data.csv>
+WHERE {
+    BIND(URI(CONCAT('http://data.janburianek.com/resource/organization/', ?Kod_partnera)) AS ?partner)
+    BIND(xsd:string(?Dodavatel) AS ?partner_legal_name)
+}
