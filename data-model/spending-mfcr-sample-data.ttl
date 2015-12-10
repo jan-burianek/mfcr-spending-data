@@ -10,18 +10,18 @@
 @prefix obeu-operation:   <http://data.openbudgets.eu/resource/codelist/operation-character/> .
 @prefix obeu-measure:     <http://data.openbudgets.eu/ontology/dsd/measure/> .
 @prefix qb:               <http://purl.org/linked-data/cube#> .
-@prefix mfcr-dimension:   <http://data.janburianek.com/ontology/dsd/mfcr-paid-invoices-2014/dimension/> .
-@prefix mfcr-attribute:   <http://data.janburianek.com/ontology/dsd/mfcr-paid-invoices-2014/attribute/> .
+@prefix mfcr-dimension:   <http://data.janburianek.com/ontology/dsd/mfcr-paid-invoices-2010-2014/dimension/> .
+@prefix mfcr-attribute:   <http://data.janburianek.com/ontology/dsd/mfcr-paid-invoices-2010-2014/attribute/> .
 @prefix dcterms:          <http://purl.org/dc/terms/> .
 @prefix rov:              <http://www.w3.org/ns/regorg#> . 
 
-<http://data.janburianek.com/resource/dataset/mfcr-paid-invoices-2014> a qb:DataSet ;
-  qb:structure <http://data.janburianek.com/ontology/dsd/mfcr-paid-invoices-2014> ;
+<http://data.janburianek.com/resource/dataset/mfcr-paid-invoices-2010-2014> a qb:DataSet ;
+  qb:structure <http://data.janburianek.com/ontology/dsd/mfcr-paid-invoices-2010-2014> ;
   obeu-dimension:organization <http://dbpedia.org/resource/Ministry_of_Finance_(Czech_Republic)> ;
   obeu-attribute:currency obeu-currency:CZK ;
   dcterms:source <http://data.mfcr.cz/sites/default/files/Uhrazene-faktury_2014.xlsx> .
 
-<http://data.janburianek.com/resource/dataset/mfcr-paid-invoices-2014/observation/1> a qb:Observation ;
+<http://data.janburianek.com/resource/dataset/mfcr-paid-invoices-2010-2014/observation/1> a qb:Observation ;
   obeu-dimension:partner <http://data.janburianek.com/resource/organization/CZ25170538> ;
   obeu-dimension:operation-character obeu-operation:expenditure ;
   mfcr-attribute:payment-purpose "Právní služby 00822-212-S 13.6.2003"@cs ;
@@ -29,9 +29,9 @@
   mfcr-dimension:transaction-date "2014-01-13"^^xsd:date ;
   obeu-measure:amount 11289.3 ;
   mfcr-attribute:variable-symbol "980130012" ;
-  qb:dataSet <http://data.janburianek.com/resource/dataset/mfcr-paid-invoices-2014> . 
+  qb:dataSet <http://data.janburianek.com/resource/dataset/mfcr-paid-invoices-2010-2014> . 
 
-<http://data.janburianek.com/resource/dataset/mfcr-paid-invoices-2014/observation/2> a qb:Observation ;
+<http://data.janburianek.com/resource/dataset/mfcr-paid-invoices-2010-2014/observation/2> a qb:Observation ;
   obeu-dimension:partner <http://data.janburianek.com/resource/organization/CZ25170539> ;
   obeu-dimension:operation-character obeu-operation:revenue ;
   mfcr-attribute:payment-purpose "popl. za vedení CP na účtu majitele"@cs ;
@@ -39,7 +39,7 @@
   mfcr-dimension:transaction-date "2014-01-06"^^xsd:date ;
   obeu-measure:amount 778288.0 ;
   mfcr-attribute:variable-symbol "200130588" ;
-  qb:dataSet <http://data.janburianek.com/resource/dataset/mfcr-paid-invoices-2014> . 
+  qb:dataSet <http://data.janburianek.com/resource/dataset/mfcr-paid-invoices-2010-2014> . 
 
 # ----- Linked entities -----
 
