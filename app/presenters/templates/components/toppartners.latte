@@ -1,0 +1,20 @@
+<thead>
+	<tr role="row">
+		<th tabindex="0" rowspan="1" colspan="1"
+			 aria-sort="ascending" style="width: 152px;">
+			Partner
+		</th>
+		<th tabindex="0" rowspan="1" colspan="1"
+			style="width: 184px;">Amount
+		</th>
+	</tr>
+</thead>
+
+<tbody>
+	{foreach $rows as $row}
+		<tr>
+			<td>{$row->name}</td>
+			<td style="width:30%">{(string)$row->amount|format} Kč</td>
+		</tr>
+	{/foreach}
+</tbody>

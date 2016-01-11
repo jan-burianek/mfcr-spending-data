@@ -13,7 +13,7 @@
 @prefix mfcr-dimension:   <http://data.janburianek.com/ontology/dsd/mfcr-paid-invoices-2010-2014/dimension/> .
 @prefix mfcr-attribute:   <http://data.janburianek.com/ontology/dsd/mfcr-paid-invoices-2010-2014/attribute/> .
 @prefix dcterms:          <http://purl.org/dc/terms/> .
-@prefix rov:              <http://www.w3.org/ns/regorg#> . 
+@prefix rov:              <http://www.w3.org/ns/regorg#> .
 
 <http://data.janburianek.com/resource/dataset/mfcr-paid-invoices-2010-2014> a qb:DataSet ;
   qb:structure <http://data.janburianek.com/ontology/dsd/mfcr-paid-invoices-2010-2014> ;

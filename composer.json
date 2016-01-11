@@ -1,0 +1,22 @@
+{
+  "name": "jan-burianek/mfcr-spending-data",
+  "description": "MFCR spending data review",
+  "minimum-stability": "dev",
+  "license": "GPL-3.0",
+  "authors": [
+    {
+      "name": "Jan Buriánek",
+      "email": "mail@janburianek.com"
+    }
+  ],
+  "require": {
+    "nette/nette-minified": "v2.3.8",
+    "twitter/bootstrap": "v3.3.6",
+    "easyrdf/easyrdf": "0.9.1",
+    "fortawesome/font-awesome": "v4.5.0",
+    "onokumus/metismenu": "v2.2.0",
+    "morrisjs/morris.js": "dev-master",
+    "components/jquery": "2.1.4",
+    "sheillendra/raphael": "dev-master"
+  }
+}
