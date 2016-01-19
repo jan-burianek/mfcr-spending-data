@@ -19,7 +19,7 @@ class StatsPresenter extends BasePresenter
 	 * @param $offset
 	 * @param $year
 	 */
-	public function actionTableToppartners ($offset, $year) {
+	public function actionTableToppartners ($year, $offset) {
 		if (!$this->isAjax()) {
 			return;
 		};
@@ -27,15 +27,17 @@ class StatsPresenter extends BasePresenter
 		$template = $this->createTemplate();
 		$template->setFile(__DIR__ . '/templates/components/toppartners.latte');
 
-		$query = file_get_contents(__DIR__ . '/../../static-sparql-queries/time-top-partners.sp')
-			. ' OFFSET ' . intval($offset);
-
-		$query = Nette\Utils\Strings::replace($query, '<date-from>', intval($year));
-		$query = Nette\Utils\Strings::replace($query, '<date-to>', intval($year) + 1);
+		$query = $this->setUpYear(file_get_contents(__DIR__ . '/../../static-sparql-queries/time-top-partners.sp')
+			. ' OFFSET ' . intval($offset), $year);
 
 		$template->rows = $this->getSparqlClient()->query($query);
 
 		$this->sendResponse(new TextResponse( (string) $template));
+	}
+
+	private function setUpYear($query, $year) {
+		$f = str_replace("<year-from>", $year, $query);
+		return str_replace("<year-to>", $year + 1, $f);
 	}
 
 }

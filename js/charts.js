@@ -162,13 +162,27 @@ var ChartStore = {
 		'dateFormat' : Chart.format.formatDate,
 		'xLabelFormat' : Chart.format.formatDate,
 		'yLabelFormat' : Chart.format.shortenNumber
+	})},
+
+	partnerInTime : function ( year, legalName ) { return new LineChart('/charts/get-partner-in-time/?year=' + year + "&legalName=" + legalName, {
+		'element': 'morris-area-chart',
+		'xkey' : 'date',
+		'ykeys' : ['amount'],
+		'labels' : ['Částka'],
+		'xLabels' : 'month',
+		'ymax' : 'auto',
+		'xLabelAngle' :0,
+		'dateFormat' : Chart.format.formatMonth,
+		'xLabelFormat' : Chart.format.formatMonth,
+		'yLabelFormat' : Chart.format.shortenNumber
 	})}
 }
 
 var Table = function (url, tableID, offset) {
 
 	if (offset != null) {
-		url += '?offset=' + offset;
+		url += (url.indexOf("?") > -1)? '&' : '?';
+		url += 'offset=' + offset;
 	}
 
 	// Vytvoření requestu
@@ -251,21 +265,22 @@ var TableStore = {
 
 	timeTopPartnersPaginator : null,
 
-	timeTopPartners : function (offset) {
+	timeTopPartners : function (offset, year) {
 
 		if (this.timeTopPartnersPaginator == null) {
 			this.timeTopPartnersPaginator = new Paginator(
-				'time-top-partners-paginator',
-				TableStore.timeTopPartners
+				'top-partners-paginator',
+				TableStore.timeTopPartners,
+				year
 			);
 		}
 
-		var containerID = 'timetoppartners';
+		var containerID = 'toppartners';
 
 		TableStore.loadingState($('#' + containerID));
 
 		return new TopPartnersTable (
-			'/stats/table-toppartners?year=2011',
+			'/stats/table-toppartners?year=' + year,
 			containerID,
 			this.topPartnersPaginator,
 			offset || null
@@ -312,11 +327,12 @@ var PaginatorButton = function (button, dataOffset) {
  *
  * @param id
  * @param callback
+ * @param year
  * @param numFields
  * @param pageSize
  * @constructor
  */
-var Paginator = function (id, callback, numFields, pageSize) {
+var Paginator = function (id, callback, year, numFields, pageSize) {
 
 	// Default values
 	var
@@ -324,6 +340,7 @@ var Paginator = function (id, callback, numFields, pageSize) {
 		_pageSize = typeof pageSize !== 'undefined' ? pageSize : 10,
 		_currentPage = 0,
 		_paginator = $('#' + id),
+		_year = typeof year !== 'undefined' ? year : null,
 //
 // TODO next and prev buttons
 //		_prevButton = new PaginatorButton(_paginator.find('li.previous'), 0),
@@ -370,7 +387,7 @@ var Paginator = function (id, callback, numFields, pageSize) {
 
 		var a = $(this);
 
-		callback(parseInt(a.attr('data-offset')));
+		callback(parseInt(a.attr('data-offset')), _year);
 
 		update(a);
 	});

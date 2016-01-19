@@ -376,3 +376,8 @@ table.dataTable thead .sorting:after {
 #top-partners-paginator {
     text-align:center;
 }
+
+#list-of-partners {
+    max-height: 435px;
+    overflow: auto;
+}
